@@ -1,0 +1,45 @@
+.cont-goals{
+    height: 70%;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.cont-goals::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+.cont-goals::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+
+.cont-goals::-webkit-scrollbar-thumb {
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 10px solid rgb(57, 93, 93);  /* creates padding around scroll thumb */
+  }
+
+.color-picker-container{
+    position: relative;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    border: solid 2px #ddd;
+    border-radius: 40px;
+}
+
+.color-picker{
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 86px;
+    height: 86px;
+    border: none;
+}
+
+.color-picker::-webkit-color-swatch {
+	border: solid 1px rgb(83, 57, 57); /*change color of the swatch border here*/
+	border-radius: 40px;
+}
