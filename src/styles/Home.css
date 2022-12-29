@@ -1,12 +1,24 @@
 .cont-goals{
-    height: 70%;
+    height: 60%;
     overflow: scroll;
     overflow-x: hidden;
-    width: 100%;
-    display: flex;
+    width: 70%;
     flex-wrap: wrap;
-    justify-content: center;
-    
+}
+
+.animate-goal-cont{
+  animation:  goalcont 3s ease-in;
+}
+
+@keyframes goalcont{
+  0%{
+    opacity: 0;
+    height: 0%;
+  }
+  100%{
+    opacity: 1;
+    height: 60%;
+  }
 }
 
 .cont-goals::-webkit-scrollbar {

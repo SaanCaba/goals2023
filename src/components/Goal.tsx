@@ -40,19 +40,19 @@ function Goal({goal} : Props) : JSX.Element {
   }
 
   return (
-    <div style={{backgroundColor: goal.color}} className={complete ? 'relative w-96  h-48 m-1 rounded' :`relative w-96  flex-wrap h-48 m-1 rounded box-goal`}>
+    <div style={{backgroundColor: goal.color}} className={complete ? 'relative w-96  h-48 m-1 rounded ' :`relative w-96 goal-animate  flex-wrap h-48 m-1 rounded box-goal`}>
       <div className='h-full relative'>
      <h2 className='text-center font-bold text-white'>{goal.date}</h2>
         <p  style={{overflowWrap:'break-word'}} className={'text-center text-white font-bold text-xl'}>{goal.goalName}</p>
       <div style={{bottom:'3px', left:'39%'}} className='absolute flex items-end justify-center'>
-      <button onClick={() => handleComplete(goal.id)} className='p-2 text-white font-bold rounded bg-[#72e889]' >Complete</button>
+      <button onClick={() => handleComplete(goal.id)} className='p-2 text-white font-bold rounded bg-[#72e889]' >Completed</button>
       </div>
       </div>
       {
         complete === true ?(
           <div style={{height:'100%', top:'0px'}} className='completeTask absolute flex justify-center items-center'>
           <div  className='text-2xl'>
-            Goal Completed!
+          <span className='select-none'>Goal Completed!</span>  
           </div>
           </div>
           

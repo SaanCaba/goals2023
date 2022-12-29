@@ -21,3 +21,16 @@
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 10px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
   }
+
+.goal-animate{
+  animation: inicio 3s ease-in-out;
+}
+
+@keyframes inicio{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
